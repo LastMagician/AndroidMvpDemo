@@ -1,0 +1,21 @@
+ext {
+    android = [
+        compileSdkVersion: 23,
+        buildToolsVersion: "23.0.2",
+        targetSdkVersion : 23,
+        applicationId    : "com.example.androidmvpdemo",
+        minSdkVersion    : 15,
+        versionCode      : 1,
+        versionName      : "1.0"
+    ]
+    dependencies = [
+        "appcompat-v7"   :'com.android.support:appcompat-v7:23.1.0',
+        "okhttp3"        :'com.squareup.okhttp3:okhttp:3.2.0',
+        'butterknife'    :'com.jakewharton:butterknife:7.0.1',
+        'rxjava'         :'io.reactivex:rxjava:1.0.10',
+        'gson'           :'com.google.code.gson:gson:2.6.2',
+        'retrofit'       :'com.squareup.retrofit:retrofit:1.9.0',
+        'rxandroid'      :'io.reactivex:rxandroid:0.24.0',
+        'nucleus'        :'info.android15.nucleus:nucleus:1.0.0'
+    ]
+}
