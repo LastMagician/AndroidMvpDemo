@@ -5,8 +5,8 @@ package com.leng.androidmvpdemo.presenter;
  */
 public interface Presenter<V> {
 
-    void attachView(V view);
+    void onAttachView(V view);
 
-    void detachView();
+    void onDetachView();
 
 }

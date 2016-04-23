@@ -7,8 +7,8 @@ public interface IMainPresenter {
 
     void loadData();
 
-    void loadDataSuccess(String str);
+    void onLoadDataSuccess(String str);
 
-    void loadDataFailure();
+    void onLoadDataFailure();
 
 }

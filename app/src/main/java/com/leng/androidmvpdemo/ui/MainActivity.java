@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements MainView, View.On
 
     protected void onDestroy() {
         super.onDestroy();
-        presenter.detachView();
+        presenter.onDetachView();
     }
 
     public void showData(String content) {

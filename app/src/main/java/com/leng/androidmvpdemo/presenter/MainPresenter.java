@@ -12,15 +12,15 @@ public class MainPresenter implements Presenter<MainView>, IMainPresenter {
     MainModel mainModel;
 
     public MainPresenter(MainView view) {
-        attachView(view);
+        onAttachView(view);
         mainModel = new MainModel(this);
     }
 
-    public void attachView(MainView view) {
+    public void onAttachView(MainView view) {
         this.mainView = view;
     }
 
-    public void detachView() {
+    public void onDetachView() {
         this.mainView = null;
     }
 
@@ -29,18 +29,16 @@ public class MainPresenter implements Presenter<MainView>, IMainPresenter {
             mainView.showProgress();
         }
         mainModel.loadData();
-
     }
 
-    public void loadDataSuccess(String content) {
+    public void onLoadDataSuccess(String content) {
         if (mainView != null) {
             mainView.showData(content);
             mainView.hideProgress();
         }
-
     }
 
-    public void loadDataFailure() {
+    public void onLoadDataFailure() {
         if (mainView != null) {
             mainView.hideProgress();
         }

@@ -19,7 +19,7 @@ public class MainModel {
             @Override
             public void run() {
                 String content = "This is a content.";
-                iMainPresenter.loadDataSuccess(content);
+                iMainPresenter.onLoadDataSuccess(content);
             }
         }, 2000);
 
